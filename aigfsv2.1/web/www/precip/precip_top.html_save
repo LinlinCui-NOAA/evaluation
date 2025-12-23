@@ -1,0 +1,160 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>NCEP EMC Global Model Verification</title>
+</head>
+
+<body background="../icons/white_blu.gif" text="#000000"
+link="#000000" vlink="#000000" alink="#000000">
+
+<p align="center"><font size="4" face="Comic Sans MS" color="blue">
+<strong> CONUS Precip Skill Score with Monte Carlo Significance Test  </strong>
+</font></p>
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=900,height=900,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+
+
+<div align="center"><center>
+
+<table border="0" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+<tr>
+
+<td> <table border="1" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=3 color="blue" face="Comic Sans MS"><strong>00Z Cycle  </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p0.2 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p2 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p5 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p10 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p15 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p25 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p35 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p50 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p75 </strong></font></a></td>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 12-36 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f36.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_12-36.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 36-60 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f60.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_36-60.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 60-84 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f84.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_60-84.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+</table></td>
+
+<td>......</td>
+
+
+<td> <table border="1" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=3 color="blue" face="Comic Sans MS"><strong>12Z Cycle  </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p0.2 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p2 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p5 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p10 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p15 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p25 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p35 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p50 </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> p75 </strong></font></a></td>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 00-24 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f24.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_00-24.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 24-48 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f48.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_24-48.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> 48-72 hrs </strong></font></a></td>
+         <td> <a  href="../../rain/etsbis.f72.png" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p002_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p020_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p050_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p100_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p150_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p250_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p350_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p500_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+         <td> <a  href="../../rain/etsbis.p750_48-72.png" onClick="return popup(this, 'frame4')"   <font size=1 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+</table></td>
+
+
+</tr> </table>
+
+</center></div>
+</body>
+</html>
+

@@ -1,0 +1,336 @@
+<html>
+
+<head>
+<title>NCEP EMC Global Model Precipitation Verification</title>
+<style type="text/css"> .fixfont {font-size:14px} </style>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function dropdown(mySel)
+{
+var myWin, myVal;
+myVal = mySel.options[mySel.selectedIndex].value;
+if(myVal)
+   {
+   if(mySel.form.target)myWin = parent[mySel.form.target];
+   else myWin = window;
+   if (! myWin) return true;
+   myWin.location = myVal;
+   }
+return false;
+}
+//-->
+</SCRIPT>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=900,height=900,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+</head>
+
+<body background="../icons/white_blu.gif" text="#000000"
+link="#000000" vlink="#000000" alink="#000000">
+
+<p align="center"><font size="4" face="Comic Sans MS" color="blue">
+<strong> CONUS Precip Skill Score with Monte Carlo Significance Test  </strong>
+</font></p>
+
+
+<div align="center"><center>
+
+
+<table border="0" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0"> <tr>
+
+<td> 
+<p>  <font size=3> <b>Mean for all <br> Hour & Threshold</font></b> </p>
+<table border="4" cellspacing="4" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    </tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 00Z</strong></font></a></td>
+        <td> <a  href="../../rain/ets_mean00z.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>ETS </b></font></a><br>
+        <td> <a  href="../../rain/bis_mean00z.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>BIAS</b></font></a><br>
+    </tr>
+    </tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 12Z</strong></font></a></td>
+        <td> <a  href="../../rain/ets_mean12z.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>ETS </b></font></a><br>
+        <td> <a  href="../../rain/bis_mean12z.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>BIAS</b></font></a><br>
+    </tr>
+</table></td>
+
+<td>......</td>
+
+<td><table border="1" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 00Z Mean Score</strong></font></a></td>
+        <td> <a  href="../../rain/etsbis.f36.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>12-36h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f60.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>36-60h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f84.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>60-84h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f108.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>84-108h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f132.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>108-132h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f156.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>132-156h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f180.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>156-180h </b></font></a><br>
+    </tr>
+
+    <tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 00Z Time Series</strong></font></a></td>
+        <td>
+          <!FORM METHOD=POST onSubmit="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_12-36.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_12-36.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_12-36.png"  selected >5   
+             <OPTION VALUE="../../rain/etsbis.p100_12-36.png"  >10     
+             <OPTION VALUE="../../rain/etsbis.p150_12-36.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_12-36.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_12-36.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_12-36.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_12-36.png"  >75      </OPTION>
+             </SELECT>
+             <!INPUT TYPE=SUBMIT VALUE="Go">
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_36-60.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_36-60.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_36-60.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_36-60.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_36-60.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_36-60.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_36-60.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_36-60.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_36-60.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_60-84.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_60-84.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_60-84.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_60-84.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_60-84.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_60-84.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_60-84.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_60-84.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_60-84.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_84-108.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_84-108.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_84-108.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_84-108.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_84-108.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_84-108.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_84-108.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_84-108.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_84-108.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_108-132.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_108-132.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_108-132.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_108-132.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_108-132.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_108-132.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_108-132.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_108-132.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_108-132.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_132-156.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_132-156.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_132-156.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_132-156.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_132-156.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_132-156.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_132-156.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_132-156.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_132-156.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_156-180.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_156-180.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_156-180.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_156-180.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_156-180.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_156-180.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_156-180.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_156-180.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_156-180.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+     </tr>
+
+    <tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 12Z Mean Score</strong></font></a></td>
+        <td> <a  href="../../rain/etsbis.f24.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>0-24h  </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f48.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>24-48h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f72.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>48-72h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f96.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>72-96h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f120.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>96-120h </b> </font></a><br>
+        <td> <a  href="../../rain/etsbis.f144.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>120-144h </b></font></a><br>
+        <td> <a  href="../../rain/etsbis.f168.png" onClick="return popup(this, 'frame4')"   <font size=3 face="Comic Sans MS"> <b>144-168h </b></font></a><br>
+    </tr>
+
+    <tr>
+        <td> <font size=3 color="red" face="Comic Sans MS"><strong> 12Z Time Series</strong></font></a></td>
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_00-24.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_00-24.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_00-24.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_00-24.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_00-24.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_00-24.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_00-24.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_00-24.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_00-24.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_24-48.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_24-48.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_24-48.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_24-48.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_24-48.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_24-48.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_24-48.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_24-48.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_24-48.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_48-72.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_48-72.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_48-72.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_48-72.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_48-72.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_48-72.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_48-72.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_48-72.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_48-72.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_72-96.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_72-96.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_72-96.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_72-96.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_72-96.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_72-96.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_72-96.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_72-96.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_72-96.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_96-120.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_96-120.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_96-120.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_96-120.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_96-120.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_96-120.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_96-120.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_96-120.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_96-120.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_120-144.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_120-144.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_120-144.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_120-144.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_120-144.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_120-144.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_120-144.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_120-144.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_120-144.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+
+        <td>
+          <FORM METHOD=POST onchange="return dropdown(this.t)" target="frame4" style="margin-top: 0">
+             <SELECT size="1" NAME="t">
+             <OPTION VALUE="../../rain/etsbis.p002_144-168.png"  >0.2    
+             <OPTION VALUE="../../rain/etsbis.p020_144-168.png"  >2  
+             <OPTION VALUE="../../rain/etsbis.p050_144-168.png"  >5   
+             <OPTION VALUE="../../rain/etsbis.p100_144-168.png" selected >10     
+             <OPTION VALUE="../../rain/etsbis.p150_144-168.png"  >15     
+             <OPTION VALUE="../../rain/etsbis.p250_144-168.png"  >25     
+             <OPTION VALUE="../../rain/etsbis.p350_144-168.png"  >35     
+             <OPTION VALUE="../../rain/etsbis.p500_144-168.png"  >50     
+             <OPTION VALUE="../../rain/etsbis.p750_144-168.png"  >75      </OPTION>
+             </SELECT>
+          </FORM>
+        </td>
+     </tr>
+</table></td>
+
+</tr> </table>
+
+</center></div>
+</body>
+</html>
+

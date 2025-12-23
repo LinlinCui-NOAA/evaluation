@@ -1,0 +1,166 @@
+<html>
+
+<head>
+<title>NCEP EMC Global Model Grid-to-Observation Verification</title>
+<style type="text/css"> .fixfont {font-size:14px} </style>
+<SCRIPT TYPE="text/javascript">
+<!--
+function dropdown(mySel)
+{
+var myWin, myVal;
+myVal = mySel.options[mySel.selectedIndex].value;
+if(myVal)
+   {
+   if(mySel.form.target)myWin = parent[mySel.form.target];
+   else myWin = window;
+   if (! myWin) return true;
+   myWin.location = myVal;
+   }
+return false;
+}
+//-->
+</SCRIPT>
+</head>
+
+<body background="icons/clouds.jpg" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<a STYLE="text-decoration:none" href="main.html"  target="frame2"><font size=4 color="black"> home </font> </a><br>
+
+
+<p align="left"> <font size=3 color=red> <b>CONUS Surface</b> </font>
+<p align="left"> <font size=2 color=green> <b><i><b>Bias</b></i></b> </font><br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/t2m.html"  target="frame2"><font size=2 color="blue"> <b> 2m Temp </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/rh2m.html"  target="frame2"><font size=2 color="blue"> <b> 2m RH </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/dpt.html"  target="frame2"><font size=2 color="blue"> <b> Dew-Point Tempt </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/wind10m.html"  target="frame2"><font size=2 color="blue"> <b> 10m Wind </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/tcld.html"  target="frame2"><font size=2 color="blue"> <b> Total Cloud </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_fo/slp.html"  target="frame2"><font size=2 color="blue"> <b> SLP </b></font> </a> 
+
+<p align="left"> <font size=2 color=green> <b><i><b>RMSE</b></i></b> </font><br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/t2m.html"  target="frame2"><font size=2 color="blue"> <b> 2m Temp </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/rh2m.html"  target="frame2"><font size=2 color="blue"> <b> 2m RH </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/dpt.html"  target="frame2"><font size=2 color="blue"> <b> Dew-Point Tempt </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/wind10m.html"  target="frame2"><font size=2 color="blue"> <b> 10m Wind </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/tcld.html"  target="frame2"><font size=2 color="blue"> <b> Total Cloud </b></font> </a> <br>
+<a STYLE="text-decoration:none" href="g2osfc_rms/slp.html"  target="frame2"><font size=2 color="blue"> <b> SLP </b></font> </a> <br>
+
+<br><br>
+<p align="left"> <font size=3 color=red> <b>Upper-Air RAOBS</b> </font><br>
+<font size=2 color=blue><i>Temp bias</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.tbias)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="tbias">
+   <OPTION VALUE="g2oair/tbias_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/tbias_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/tbias_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/tbias_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/tbias_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>Q bias</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.qbias)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="qbias">
+   <OPTION VALUE="g2oair/qbias_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/qbias_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/qbias_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/qbias_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/qbias_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>RH bias</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.rhbias)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="rhbias">
+   <OPTION VALUE="g2oair/rhbias_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/rhbias_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/rhbias_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/rhbias_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/rhbias_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>Wind bias</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.vbias)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="vbias">
+   <OPTION VALUE="g2oair/vbias_gtrp.html" selected >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/vbias_gglb.html"          >Globe    </OPTION>
+   <OPTION VALUE="g2oair/vbias_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/vbias_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/vbias_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+
+<font size=2 color=blue><i>Temp RMSE</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.trms)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="trms">
+   <OPTION VALUE="g2oair/trms_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/trms_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/trms_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/trms_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/trms_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>Q RMSE</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.qrms)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="qrms">
+   <OPTION VALUE="g2oair/qrms_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/qrms_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/qrms_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/qrms_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/qrms_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>RH RMSE</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.rhrms)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="rhrms">
+   <OPTION VALUE="g2oair/rhrms_gglb.html" selected >Globe    </OPTION>
+   <OPTION VALUE="g2oair/rhrms_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/rhrms_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/rhrms_gtrp.html"          >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/rhrms_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+<font size=2 color=blue><i>Wind RMSE</i></font>
+<font size=1 color=black>
+ <FORM METHOD=POST onSubmit="return dropdown(this.vrms)" target="frame2" style="margin-top: 0">
+   <SELECT NAME="vrms">
+   <OPTION VALUE="g2oair/vrms_gtrp.html" selected >Tropics   </OPTION>
+   <OPTION VALUE="g2oair/vrms_gglb.html"          >Globe    </OPTION>
+   <OPTION VALUE="g2oair/vrms_gnh.html"           >N. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/vrms_gsh.html"           >S. Hemp   </OPTION>
+   <OPTION VALUE="g2oair/vrms_g236.html"          >CONUS    </OPTION>
+   </SELECT>
+   <INPUT TYPE=SUBMIT VALUE="Go">
+ </FORM>
+</font>
+
+
+
+<br><br><br>
+<script language="JavaScript" src="date.js"></script> 
+</body>
+</html>

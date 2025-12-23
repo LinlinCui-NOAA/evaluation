@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>NCEP EMC Global Model Verification</title>
+</head>
+
+<body background="../icons/white_blu.gif" text="#000000"
+link="blue" vlink="blue" alink="blue">
+
+<div align="left">
+
+<p align=left><font size=4 color=blue> Definitions of Threat Score, Equitable Threat Score and Bias Score</font>
+
+
+<UL> <font size=3>
+<LI> First, define the contingency table: 
+  <UL>
+  <LI>Hits (a): occasions where both forecast and observation are greater than or equal to a threshold;  </LI>
+  <LI>False alarms (b): occasions where forecast is above a threshold whereas observation is under the same threshold;  </LI>
+  <LI>Misses (c):  occasions where the observation is above a threshold and forecast is under the same threshold;  </LI>
+  <LI>No forecasts (d):  occasions where both forecast and observation are under the threshold.  </LI>
+  </UL>
+</LI>
+
+<LI> Bias Score: BS=(a + b)/(a + c)
+<br> measures over-forecasts (BS>1) or under-forecasts (BS<1)
+precipitation frequency over an area for a selected threshold.
+</LI>
+
+<LI> Threat Score: TS=a/(a + b + c)
+<br> Measures the fraction of observed and/or forecast events that were correctly predicted.  It is sensitive to hits, penalizes both misses and false alarms,  does not distinguish source of forecast error, depends on climatological frequency of events (poorer scores for rarer events) since some hits can occur purely due to random chance. TS=1 means a perfect forecast.
+</LI>
+
+<LI> Equitable Threat Score: EQ_TS=(a - ar)/(a + b + c - ar)
+<br>where ar is the expected number of correct forecasts
+above the threshold in a random forecast where forecast
+occurrence/non-occurrence is independent from
+observation/non-observation,  ar=(a + b)*(a + c)/(a + b + c + d).
+EQ_TS=1 means a perfect forecast. EQ_TS <=0 means the forecast is useless.
+</LI>
+</UL>
+
+<p>For more information, please see 
+<a href=http://www.hpc.ncep.noaa.gov/html/scorcomp.shtml target="_blank"> NCEP HPC illustration </a>
+and 
+<a href=http://www.bom.gov.au/bmrc/wefor/staff/eee/verif/verif_web_page.html target="_blank"> WGNE verification documentation</a><br>
+
+<!img src=../../rain/etsbis.f36.png  !width=600 vspace=0 hspace=0>  
+
+</div>
+</body>
+</html>
+
