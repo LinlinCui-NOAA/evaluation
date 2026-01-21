@@ -1,0 +1,35 @@
+body {
+        margin : 0;
+        padding : 0;
+        background-color : #ffffff;
+        color : #000000;
+        }
+.first {
+        border-collapse: collapse;
+        border: 3px solid black;
+        }
+.second {
+        border-collapse: collapse;
+	border: 1px dashed black;
+}
+.legend {
+        font-size: 0.75em;
+}
+#bold {
+        font: bold 1em Times;
+	}
+
+td {
+        border-collapse: collapse;
+        border: 2px solid black;
+}
+th {
+        border-collapse: collapse;
+        border: 1px solid black;
+        color: red;
+        font-family: Garamound;
+}
+#thside {
+        color: blue;
+        font-family: Garamound;
+}
